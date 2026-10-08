@@ -1,9 +1,7 @@
 name: Compose full changelog
 
 on:
-  release:
-    types:
-      - edited
+  workflow_dispatch:
 
 env:
   CHANGELOG_ARTIFACTS: changelog

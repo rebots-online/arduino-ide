@@ -3,18 +3,7 @@ name: Check Certificates
 
 # See: https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 on:
-  create:
-  push:
-    paths:
-      - '.github/workflows/check-certificates.ya?ml'
-  pull_request:
-    paths:
-      - '.github/workflows/check-certificates.ya?ml'
-  schedule:
-    # Run every 10 hours.
-    - cron: '0 */10 * * *'
   workflow_dispatch:
-  repository_dispatch:
 
 env:
   # Begin notifications when there are less than this many days remaining before expiration.

@@ -1,18 +1,6 @@
 name: Push Container Images
 
 on:
-  pull_request:
-    paths:
-      - ".github/workflows/push-container-images.ya?ml"
-  push:
-    paths:
-      - ".github/workflows/push-container-images.ya?ml"
-      - "**.Dockerfile"
-      - "**/Dockerfile"
-  repository_dispatch:
-  schedule:
-    # Run periodically to catch breakage caused by external changes.
-    - cron: "0 8 * * MON"
   workflow_dispatch:
 
 jobs:

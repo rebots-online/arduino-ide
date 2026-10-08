@@ -6,21 +6,7 @@ env:
 
 # See: https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 on:
-  create:
-  push:
-    paths:
-      - '.github/workflows/check-i18n-task.ya?ml'
-      - '**/package.json'
-      - '**.ts'
-      - 'i18n/**'
-  pull_request:
-    paths:
-      - '.github/workflows/check-i18n-task.ya?ml'
-      - '**/package.json'
-      - '**.ts'
-      - 'i18n/**'
   workflow_dispatch:
-  repository_dispatch:
 
 jobs:
   run-determination:

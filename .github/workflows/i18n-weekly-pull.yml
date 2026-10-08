@@ -5,9 +5,7 @@ env:
   GO_VERSION: '1.21'
 
 on:
-  schedule:
-    # run every monday at 2AM
-    - cron: '0 2 * * 1'
+  workflow_dispatch:
 
 jobs:
   pull-from-transifex:
